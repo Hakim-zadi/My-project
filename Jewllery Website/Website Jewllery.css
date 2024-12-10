@@ -1,0 +1,440 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.announcement-bar, .promo-bar, .shipping-bar {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px;
+    font-size: 14px;
+    position: fixed;
+    width: 100%;
+    left: 0;  
+    z-index: 1000;
+    padding: 0 10px;
+}
+.announcement-bar {
+    top: 0;
+    height: 30px; 
+    background-color: black;
+    color: white;
+}
+.promo-bar {
+    top: 30px; 
+    height: 30px; 
+    background: rgb(48, 64, 56);
+    color: white;
+}
+.shipping-bar {
+    top: 60px; 
+    height: 30px; 
+    background-color: rgba(239, 234, 230);
+    color: rgb(48, 64, 56);
+}
+.shipping-bar p {
+    flex: 1; 
+    text-align: center; 
+    margin-left: 100px;
+}
+.shipping-info {
+    display: flex; 
+    margin-right: 20px; 
+}
+.shipping-info select {
+    font-size: 14px; 
+    margin-right: 10px;
+    font-weight: bold;
+    border: none; 
+    outline: none;  
+}
+.navbar {
+    position: fixed; 
+    top: 90px; 
+    width: 100%;
+    background-color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin-right: 70px;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar ul li {
+    margin-left: 20px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+.right-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; 
+}
+.right-links li {
+    margin-left: 20px;
+    display: flex;
+    align-items: center; 
+}
+.circle {
+    width: 40px;
+    height: 40px;
+    background: rgb(48, 64, 56);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 40px;
+}
+.breadcrumb {
+    margin-top: 170px; 
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    z-index: 998;
+    border-bottom: none; 
+}
+.breadcrumb a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.breadcrumb span {
+    margin-left: 3px;
+}
+.breadcrumb-item {
+    margin-right: 3px; 
+}
+.breadcrumb-back {
+    margin-right: 15px; 
+}
+.breadcrumb-slash {
+    margin-right: 3px; 
+}
+.main-container {
+    display: flex;
+    padding: 0 20px; 
+}
+.image-column {
+    display: flex;
+    flex-direction: column;
+    width: 65px;
+    margin-top: 15px;
+}
+.image-item1 img {
+    width: 40px;
+    height: 40px;   
+}
+.image-item img {
+    width: 40px;
+    height: 40px;   
+}
+.image-display {                       
+    width: 65rem;                  
+    height: 580px; 
+    margin-right: 50px; 
+    position: sticky;
+    top: 0;                   
+}
+#enlarged-image {
+    width: 100%;                  
+    height: 100%;                 
+    object-fit: cover;   
+    margin-right: 100px;                  
+}
+.content-section {
+    color: rgb(63, 105, 83);
+}
+.stars {
+    color: rgb(103, 132, 117);
+}
+.stars .span {
+    margin-bottom: 5px;
+}
+.content-section h2 {
+    margin-bottom: 5px; 
+}
+.reviews {
+    margin-top: 0; 
+}
+.small-text {
+    font-size: 12px; 
+    font-weight: bolder;
+}
+
+.dropdown-container {
+    position: relative;
+    width: 380px;  
+}
+.dropdown {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 10px;
+    justify-content: space-between; 
+    margin-bottom: 8px; 
+    padding-bottom: 15px; 
+    border-bottom: 1px solid #e3e3e3;   
+}
+.dropdown-options {
+    display: none;
+    background-color: #f9f9f9;
+    position: absolute;
+    width: 400px;
+    z-index: 1;
+    color: rgb(81, 108, 94);  
+    font-size: 10px;
+}
+.dropdown-options div {
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;   
+}
+.dropdown-options div:last-child {
+    border-bottom: none; 
+}
+.dropdown-options div:hover {
+    background-color: rgb(236, 191, 107);
+}
+.dropdown.active {
+    border: 2px solid black; 
+    border-radius: 5px; 
+}
+.dropdown-container.show .dropdown-options {
+    display: block;
+}
+.order-info {
+    margin-top: 40px; 
+    font-size: 14px;
+    margin-left: 88px;
+}
+button {
+    background: rgb(48, 64, 56);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 13px;
+    cursor: pointer;
+    width: 400px;
+    height: 50px;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+button:hover {
+    background-color: #333; 
+}
+.Sale p {
+    color: #9d5515;
+    font-size: 10px;
+    font-weight: bolder;
+    margin-left: 150px;
+    margin-top: 40px;
+    letter-spacing: 1px;
+}
+.underline {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+.quality {
+    font-size: 12px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+.quality p {
+    margin-top: 40px;
+    letter-spacing: 1px;
+}
+.features-section {
+    text-align: center;
+}
+.features-row, .services-row {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    margin-right: 100px;
+}
+.feature-item, .service-item {
+    text-align: center;
+    max-width: 100px;
+}
+.feature-item img, .service-item img {
+    width: 50px;
+    height: auto;
+}
+h3 {
+    font-weight: bold;
+    margin: 20px 0;
+}
+.service-item p {
+    font-size: 12px;
+}
+.service-item img {
+    width: 30px;
+    height: 30px
+}
+.separator-line {
+    height: 1px; 
+    background-color: #ddd; 
+    margin-top: 35px; 
+    margin-bottom: 5px;
+    width: 400px; 
+}
+.gem-dropdown-container {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    width: 400px;
+}
+.gem-dropdown {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    position: relative; 
+    border: 1px solid transparent; 
+    border-radius: 4px; 
+    padding: 4px; 
+    transition: border-color 0.3s ease; 
+}
+.gem-dropdown:hover {
+    border-color: #333; 
+}
+.downText {
+    font-weight: bold; 
+    flex: 1; 
+    font-size: 10px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.toggle-icon {
+    font-size: 18px;
+    margin-left: 8px;
+    color: #333;
+    cursor: pointer; 
+}
+.gem-dropdown-options {
+    width: 380px;
+    margin-left: 20px;
+    font-size: 15px;   
+    margin-top: 5px;
+    display: none;
+}
+.gem-dropdown-options div {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0; 
+    line-height: 1.8; 
+    font-size: 14px;
+    word-spacing: 1px;
+}
+.gem-dropdown-options.open {
+    max-height: 820px; 
+}
+.indented-text {
+    margin-left: 60px; 
+    display: block;
+}
+.gem-dropdown-options1 {
+    width: 380px;
+    margin-left: 20px;
+    font-size: 15px;   
+    margin-top: 5px;
+    display: none;
+    line-height: 1.5;
+}
+.underline-text {
+    text-decoration: underline;
+}
+.gem-dropdown-options2 {
+    margin-left: 5px;
+    font-size: 15px;
+}
+.gem-dropdown-options3 {
+    width: 380px;
+    margin-left: 20px;
+    font-size: 15px;   
+    margin-top: 5px;
+    display: none;
+    line-height: 1.7;
+    font-weight: normal;
+}
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 50px;
+  }
+  .image-container {
+    text-align: center;
+  }
+  .image-container {
+    width: 100%;
+    display: block;
+  }
+  .image-large {
+    width: 550px;
+    height: 480px;
+    margin-left: 70px;
+  }
+  .image-small1 {
+    width: 260px;
+    height: 340px;
+    background-color: #eeecec;
+    margin-top: 25px;
+  }
+  .image-small2 {
+    width: 260px;
+    height: 340px;
+    background-color: #eeecec;
+    margin-top: 37px; 
+  }
+  .image-small3 {
+    width: 260px;
+    height: 340px;
+    background-color: #eeecec;
+    margin-top: 37px;
+    margin-right: 75px;
+  }
+  .text-overlay {
+    margin-bottom: 0;
+    top: 0; 
+    left: 0; 
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+    text-align: start;
+    top: -2px;
+    letter-spacing: 1px;
+  }
+  .details {
+    font-size: 13px;
+    color:  rgb(48, 64, 56);
+    text-align: start;
+  }
+  .text-scroll{
+    margin-top: 150px;
+    color:  rgb(48, 64, 56);
+    font-size: 40px;
+  }
+  
