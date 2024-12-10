@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Website</title>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Website Jewllery.css">
+ </head>
+
+ <body>
+    <div class="announcement-bar">
+        <p>Free shipping to Pakistan on all orders above Rs27,770</p>
+    </div>
+    <div class="promo-bar">
+        <p>BLACK FRIDAY CAME EARLY! 30% off, 35% off orders $750+</p>
+    </div>
+    <div class="shipping-bar">
+        <p>Free shipping on orders $100+</p>
+        <div class="shipping-info">
+
+            <select>
+                <option value="option1">PK</option>
+                <option value="option2">Germany</option>
+                <option value="option3">Italy</option>
+            </select>
+        </div>
+    </div>
+    <nav class="navbar">
+        <ul class="left-links">
+            <li><a href="#fine-jewelry">Fine Jewelry</a></li>
+            <li><a href="#trending">Trending</a></li>
+            <li><a href="#engagement">Engagement</a></li>
+        </ul>
+        <div class="logo">AURATE</div>
+        <ul class="right-links">
+            <li><i class='bx bx-search-alt-2'></i></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#account">Account</a></li>
+            <li>
+                <div class="circle">0</div>
+            </li>
+        </ul>
+    </nav>
+    <div class="breadcrumb">
+        <span class="breadcrumb-back">&lt; Back</span>
+        <span class="breadcrumb-item">Home</span>
+        <span class="breadcrumb-slash">/</span>
+        <span class="breadcrumb-item">Shop</span>
+        <span class="breadcrumb-slash">/</span>
+        <span class="breadcrumb-item">Gold Rings</span>
+        <span class="breadcrumb-slash">/</span>
+        <span class="breadcrumb-item">Toi et Moi Gemstone Classic Ring</span>
+
+    </div>
+    <div class="main-container">
+        <div class="image-column">
+            <div class="image-item1"><img src="Green ring image.webp" alt="Image 1" onclick="enlargeImage(this)"></div>
+            <div class="image-item"><img src="three rings.webp" alt="Image 2" onclick="enlargeImage(this)"></div>
+            <div class="image-item"><img src="ring hand side.webp" alt="Image 3" onclick="enlargeImage(this)"></div>
+            <div class="image-item"><img src="Neck ring hand.webp" alt="Image 4" onclick="enlargeImage(this)"></div>
+            <div class="image-item"><img src="ring in finger.webp" alt="Image 5" onclick="enlargeImage(this)"></div>
+            <div class="image-item"><img src="hands ring.webp" alt="Image 6" onclick="enlargeImage(this)"></div>
+            <div class="image-item"><img src="Green ring image.webp" alt="Image 7" onclick="enlargeImage(this)"></div>
+            <div class="image-item"><img src="ring.webp" alt="Image 8" onclick="enlargeImage(this)"></div>
+        </div>
+        <div class="image-display">
+            <img id="enlarged-image" src="Green ring image.webp" alt="Enlarged Image">
+        </div>
+        <div class="content-section">
+            <h2>Toi et Moi Gemstone Classic Ring</h2>
+            <div class="reviews">
+                <span class="stars">★★★★★</span>
+                <span class="small-text">26 Reviews</span>
+
+            </div>
+            <p>
+                <span style="color: #9d5515;;">₨50,375 35% Off</span>
+                <br>
+                <del>₨77,500</del> Original Price
+            </p>
+
+            <div class="dropdown-container">
+                <label for="rate"></label>
+                <div class="dropdown">
+                    RATE - VERMEIL
+                    <span class="arrow" onclick="toggleDropdown('Rate-options')"
+                        style="margin-left: 270px; cursor: pointer;">▼</span>
+                </div>
+
+                <div id="Rate-options" class="dropdown-options" style="display: none;">
+                    <div>VERMEIL <span style="margin-left: 225px;">MADE-TO-ORDER</span></div>
+                    <div>14K <span style="margin-left: 250px;">MADE-TO-ORDER</span></div>
+                    <div>18K <span style="margin-left: 250px;">MADE-TO-ORDER</span></div>
+                </div>
+            </div>
+
+            <div class="dropdown-container">
+                <label for="rate"></label>
+                <div class="dropdown">
+                    COLOR - YELLOW GOLD
+                    <span class="arrow" onclick="toggleDropdown('color-options')"
+                        style="margin-left: 232px; cursor: pointer;">▼</span>
+                </div>
+
+                <div id="color-options" class="dropdown-options" style="display: none;">
+                    <div>YELLOW <span style="margin-left: 220px;">MADE-TO-ORDER</span></div>
+                    <div>ROSE <span style="margin-left: 233px;">MADE-TO-ORDER</span></div>
+                    <div>WHITE <span style="margin-left: 229px;">MADE-TO-ORDER</span></div>
+                </div>
+            </div>
+
+            <div class="dropdown-container">
+                <label for="rate"></label>
+                <div class="dropdown">
+                    SIZE - 5
+                    <span class="arrow" onclick="toggleDropdown('size-options')"
+                        style="margin-left: 312px; cursor: pointer;">▼</span>
+                </div>
+
+                <div id="size-options" class="dropdown-options" style="display: none;">
+                    <div>5 <span style="margin-left: 252px;">MADE-TO-ORDER</span></div>
+                    <div>5.5 <span style="margin-left: 243px;">MADE-TO-ORDER</span></div>
+                    <div>6 <span style="margin-left: 251px;">MADE-TO-ORDER</span></div>
+                </div>
+            </div>
+
+            <div class="dropdown-container">
+                <label for="rate"></label>
+                <div class="dropdown">
+                    EMERALD STONE - WHITE TOPAZ
+                    <span class="arrow" onclick="toggleDropdown('emerald-options')"
+                        style="margin-left: 187px; cursor: pointer;">▼</span>
+                </div>
+
+                <div id="emerald-options" class="dropdown-options" style="display: none;">
+                    <div>WHITE TOPAZ <span style="margin-left: 197px;">MADE-TO-ORDER</span></div>
+                    <div>PINK TOURMALINE <span style="margin-left: 172px;">MADE-TO-ORDER</span></div>
+                    <div>YELLOW CITRINE <span style="margin-left: 179px;">MADE-TO-ORDER</span></div>
+                </div>
+            </div>
+
+            <div class="dropdown-container">
+                <label for="rate"></label>
+                <div class="dropdown">
+                    PEAR STONE - WHITE TOPAZ
+                    <span class="arrow" onclick="toggleDropdown('pear-options')"
+                        style="margin-left: 208px; cursor: pointer;">▼</span>
+                </div>
+
+                <div id="pear-options" class="dropdown-options" style="display: none;">
+                    <div>WHITE TOPAZ <span style="margin-left: 200px;">MADE-TO-ORDER</span></div>
+                    <div>PINK TOURMALINE <span style="margin-left: 175px;">MADE-TO-ORDER</span></div>
+                    <div>YELLOW CITRINE <span style="margin-left: 180px;">MADE-TO-ORDER</span></div>
+                </div>
+            </div>
+
+            <div class="order-info"><strong>Made to order</strong> • Ships by Wed, Dec 4</div>
+            <button>ADD TO BAG</button>
+
+            <div class="Sale">
+                <p>FINAL SALE! <span class="underline">DETAILS.</span></p>
+            </div>
+            <div class="quality">
+                <p>FINEST QUALITY</p>
+            </div>
+            <div class="features-section">
+                <div class="features-row">
+                    <div class="service-item">
+                        <img src="bar.png" alt="Precious Metals Icon">
+                        <p>Precious Metals Only</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="diamond.png" alt="SI Clarity Icon">
+                        <p>SI Clarity Only</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="check.png" alt="Checked by Hand Icon">
+                        <p>Checked by Hand</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="recycle.png" alt="Sustainably Made Icon">
+                        <p>Sustainably Made</p>
+                    </div>
+                </div>
+            </div>
+            <div class="quality">
+                <p>FINEST QUALITY, TOO</p>
+            </div>
+            <div class="features-section">
+                <div class="services-row">
+                    <div class="service-item">
+                        <img src="box.png" alt="Free Shipping Icon">
+                        <p>Free Shipping<br>$100+</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="undo.png" alt="Free Returns Icon">
+                        <p>Free Returns</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="access.png" alt="Lifetime Warranty Icon">
+                        <p>Lifetime Warranty</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="orbits.png" alt="Carbon Neutral Icon">
+                        <p>Carbon Neutral</p>
+                    </div>
+                </div>
+                <div class="separator-line"></div>
+            </div>
+            <div class="gem-dropdown-container">
+                <div class="gem-dropdown" onclick="toggleDropdown('story-options', 'story-icon')">
+                    <span class="downText">STORY</span>
+                    <span id="story-icon" class="toggle-icon">+</span>
+                </div>
+                <div id="story-options" class="gem-dropdown-options" style="display: none;">
+                    <div>
+                        Toi et Moi (aka 'You and I', en français s'il vous plaît)<br> rose to fame thanks to Napoleon's
+                        proposal to<br> Josephine in 1796. While that's all very romantic, we<br> like to think of this
+                        ring as a symbol of modern love,<br> as in, the love you have for yourself. Why? Bc all<br> data
+                        shows that when you take care of yourself, you<br> are in fact a better human for the world
+                        around you.<br> May this serve as a reminder to book that night off,<br> say no to that dinner
+                        you are dreading, eat those<br> carbs, take that vacay, read that book, or do<br> whatever it is
+                        that *you* need. The rest will thank<br> you.<br><br>
+
+                        Don't let the name fool you, Toi et Moi is all about<br> *you* and we designed it as such.
+                        You're in
+                        the<br> driver's seat here and can select (1) over a dozen<br> gemstones in pear and emerald
+                        cuts, (2)
+                        vermeil,<br> 14K, or 18K gold, and (3) a classic or vintage setting.<br> Full array of
+                        options here.
+                    </div>
+                </div>
+            </div>
+
+            <div class="gem-dropdown-container">
+                <div class="gem-dropdown" onclick="toggleDropdown('specs-options', 'specs-icon')">
+                    <span class="downText">SPECS</span>
+                    <span id="specs-icon" class="toggle-icon">+</span>
+                </div>
+                <div id="specs-options" class="gem-dropdown-options1" style="display: none;">
+                    A pear shape 8x5mm gemstone is perfectly paired<br> with a 7x5mm emerald shape gemstone in a
+                    classic<br>
+                    modern prong setting, and band of 1.75mm width, in<br> your choice of vermeil, 14k, or 18k.<br><br>
+
+                    We worked with our best partners to bring you<br> affordable and quality gemstones. Note: While
+                    our<br>
+                    green emerald, blue sapphire, red ruby, aquamarine,<br> pink sapphire, and green tourmaline stones
+                    are<br>
+                    created lab-grown, all other gemstones are natural<br> and therefore color variation and inclusions
+                    may<br>
+                    occur.<br><br>
+
+                    <strong>Width:</strong> 1.75mm<br>
+                    <strong>Thickness:</strong> 1.5mm<br>
+                    <strong>Weight:</strong> 1.5g<br>
+                    <strong>Stones:</strong> Pear Cut Gemstone: 8x5mm (1ct);<br>
+                    <span class="indented-text">Emerald Cut Gemstones: 7x5mm (1ct)</span>
+                    <strong>SKU:</strong> AU3164
+                </div>
+            </div>
+
+
+            <div class="gem-dropdown-container">
+                <div class="gem-dropdown" onclick="toggleDropdown('ring-options', 'ring-icon')">
+                    <span class="downText">RING</span>
+                    <span id="ring-icon" class="toggle-icon">+</span>
+                </div>
+                <div id="ring-options" class="gem-dropdown-options2" style="display: none;">
+                    <p>View our ring sizer <span class="underline-text">here</span>.</p>
+                </div>
+            </div>
+
+            <div class="gem-dropdown-container">
+                <div class="gem-dropdown" onclick="toggleDropdown('materials-options', 'materials-icon')">
+                    <span class="downText">MATERIALS</span>
+                    <span id="materials-icon" class="toggle-icon">+</span>
+                </div>
+                <div id="materials-options" class="gem-dropdown-options3" style="display: none;">
+                  
+                    <p><strong>Vermeil</strong><br>
+                        Made with a 100% sterling silver base and plated in<br> a minimum of 2.5 microns of 14k recycled
+                        gold or<br> higher (vs. the standard of 10k gold). We proudly<br> steer clear from brass, regular gold
+                        plating, and<br> actually stand by the official vermeil 2.5 micron<br> guidelines (which is 500%
+                        thicker, fyi). Because we<br> like to overachieve, we've also added a bonus anti-<br>tarnish coat to
+                        protect against day-to-day wear.<br><br>
+
+                        <strong>14k and 18k Solid Gold</strong><br>
+                        We recommend 14k or 18k solid recycled gold if<br> you're looking for your jewelry to last
+                        generations to<br> come. Solid gold is guaranteed to never tarnish, so<br> you never have to take it off
+                        (bonus: you can wear it<br> in water). It's 100% worry free. In addition to our<br> quality standards,
+                        all our manufacturers certify<br> where their gold comes from so we can proudly<br> stand behind our
+                        ethical practices.<br><br>
+
+                        <strong>Gemstones</strong><br>
+                        Our team of obsessors hand pick the highest<br> quality, precious and semi-precious gemstones.<br> Each
+                        is unique, but all pass our meticulous<br>standards.<br><br>
+
+                        <strong>Recycled Gold</strong><br>
+                        Proudly made with recycled gold. This means the<br> majority of the gold we use does not come from a<br>
+                        mine, making our jewelry more sustainable. While it<br> might cost us more, we vote planet > profit,
+                        all day<br>every day.
+                    </p>
+                </div>
+            </div>
+       </div>
+    </div>
+
+       <div class="image-row">
+        <div class="image-container">
+          <img src="ring.webp" class="image-large" alt="Image 1">
+          <div class="details">
+          </div>
+        </div>
+
+        <div class="image-container">
+          <div class="text-overlay">GOES WELL WITH</div>
+          <img src="round ring.webp" class="image-small1" alt="Image 2">
+          <div class="details">
+            <p><strong>Mini Quilted Gold Ring</strong></p>
+            <p>Rs.28,600</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="blue ring.webp" class="image-small2" alt="Image 3">
+          <div class="details">
+            <p><strong>Toi et Moi Gemstone Heirloom Ring</strong></p>
+            <p>Rs.54,300</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="earrings.webp" class="image-small3" alt="Image 4">
+          <div class="details">
+            <p><strong>Diamond Huggie Earrings</p></strong></p>
+            <p>Rs.174,200 PAIR</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-scroll">
+        <marquee behavior="scroll" direction="left" scrollamount="10">
+            Fine jewelry <i>born and raised</i> in New York. Designed by two friends tired of <i>green fingers.</i>
+        </marquee>
+    </div>
+    
+        <script src="Jewllery Web.js"></script>
+    </body>
+</html>
